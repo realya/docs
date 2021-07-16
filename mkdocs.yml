@@ -1,0 +1,59 @@
+site_name: Realya Docs
+theme:
+  name: material
+  favicon: https://realya.ch/assets/img/Logo/favicon.png
+  icon:
+   logo: fontawesome/brands/accessible-icon
+  language: fr
+  features:
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - search.highlight
+    - navigation.instant
+     navigation.tracking
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      title: Test Jours
+      scheme: default
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Nuit !
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Jour !
+plugins:
+  - search
+copyright: Copyright &copy; 2021 Slendy_Milky
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.betterem
+  - pymdownx.emoji
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - footnotes
+  - attr_list
+  - def_list
+  - meta
+  - toc:
+      #toc_depth: 3
+      permalink: ⚓︎
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
